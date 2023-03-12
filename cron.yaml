@@ -1,0 +1,15 @@
+cron:
+- description: "smtp pull gmail emails"
+  url: /api/transfers/send/smtp
+  schedule: every 1 mins
+- description: "everyday update task, Users quota & Gmail watcher, etc"
+  url: /api/shedule/everydayupdate
+  schedule: every day 00:00
+  timezone: Etc/UTC
+- description: "everyweek update task, Users referrals quota"
+  url: /api/shedule/everyweekupdate
+  schedule: every monday 00:00
+  timezone: Etc/UTC
+- description: "Solana wallet pull transactions"
+  url: /api/shedule/checksolwallet
+  schedule: every 1 mins

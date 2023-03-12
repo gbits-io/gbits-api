@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html amp4email>
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <style amp4email-boilerplate>body{visibility:hidden}</style>
+    <style amp-custom>
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:rgba(0,0,0,0)}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{-webkit-box-sizing:border-box;box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}html{font-size:62.5%;font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{background-color:#f7f7f7;color:#000;font-size:1.4rem;font-family:Helvetica,Arial,sans-serif;line-height:1.4}@media(min-width: 802px){body{font-size:1.6rem}}*,*:before,*:after{-webkit-box-sizing:border-box;box-sizing:border-box}::-moz-selection{background-color:rgba(17,127,253,.4);text-shadow:none}::selection{background-color:rgba(17,127,253,.4);text-shadow:none}svg:not(:root){overflow:hidden}a{color:#039be5;text-decoration:none;-webkit-text-decoration-skip:objects}a:hover{text-decoration:none}a:active{text-decoration:none}a:focus{outline:none;text-decoration:none}iframe{border:none}h1,h2,h3,h4,h5,h6,p{margin:0}h1{font-size:3rem;font-weight:normal;line-height:2.6rem}@media(min-width: 802px){h1{font-size:3.3rem;line-height:3.7rem}}amp-list [tabindex="0"],amp-selector [option][selected]{outline:none}textarea{border:none;background-color:#ebebeb;color:#000;min-height:80px;max-height:280px;overflow-y:auto;overflow-x:hidden;padding:2px 10px;resize:vertical;width:100%}input{border:none;background-color:#ebebeb;color:#000;display:inline-block;font-size:16px;height:30px;line-height:1.3;padding:2px 10px;width:100%;-webkit-appearance:none}input[disabled]{opacity:0}input[disabled].disabled{opacity:.5}select{background-position:calc(100% - 10px) center;background-image:url(https://alexkazakov.info/layout/transfer-ampemail/img/arrow-down.png);background-repeat:no-repeat;background-size:10px 6px;border:none;background-color:#ebebeb;color:#000;font-size:16px;height:30px;padding:2px 30px 2px 10px;width:100%;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearance:none}select::-ms-expand{display:none}select[disabled]{opacity:0}.hidden{display:none}.show{display:block}.amplist-helptext{margin-right:auto;margin-left:auto;padding-right:15px;padding-left:15px;padding-top:30px;width:100%}.align-i-s{-webkit-box-align:start;align-items:flex-start}.align-i-e{-webkit-box-align:end;align-items:flex-end}.align-i-c{-webkit-box-align:center;align-items:center}.display-f{display:-webkit-box;display:flex}.display-b{display:block}.display-i-b{display:inline-block}.container-z{position:relative;z-index:1}.clear-btn{background-color:rgba(0,0,0,0);border:none;cursor:pointer;outline:none;padding:0}.clear-list{list-style:none;margin:0;padding:0}.clear-input{border:none;display:inline-block;-webkit-appearance:none}.clearfix:after{content:"";display:table;clear:both}.color-primary{color:#01b0f1}.col{-webkit-box-flex:0;flex:0 0 100%;max-width:100%;min-height:1px;width:100%}.error{color:#ca0404}.flex-dir-c{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column}.flex-wrap-w{flex-wrap:wrap}.float-r{float:right}.font-weight-b{font-weight:bold}.justify-c-s-b{-webkit-box-pack:justify;justify-content:space-between}.justify-c-e{-webkit-box-pack:end;justify-content:flex-end}.justify-c-c{-webkit-box-pack:center;justify-content:center}.img-full-width{height:auto;width:100%}.margin-b-xs{margin-bottom:2px}.margin-b-sm{margin-bottom:20px}.margin-b-md{margin-bottom:30px}.outline-n{outline:none}.pos-relative{position:relative}.row{display:-webkit-box;display:flex;flex-wrap:wrap}.success{color:#64ca04}.text-align-c{text-align:center}.text-align-l{text-align:left}.text-align-r{text-align:right}.text-transform-u{text-transform:uppercase}.text-decoration-l-t{text-decoration:line-through}.full-width{width:100%}.alert{display:block;font-size:14px;margin:4px 0}.alert_error{color:#ca0404}.alert_success{color:#64ca04}.alert_font-size-xs{font-size:12px}.about{display:-webkit-box;display:flex;flex-wrap:wrap;-webkit-box-pack:justify;justify-content:space-between}@media(min-width: 577px){.about{padding:15px 8px}}.about__left,.about__right{width:100%}@media(min-width: 577px){.about__left,.about__right{-webkit-box-flex:0;flex:0 0 50%;max-width:50%}}.about__left{padding:15px 0}@media(min-width: 577px){.about__left{margin-bottom:0}}.about__right{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex}@media(min-width: 577px){.about__right{-webkit-box-pack:center;justify-content:center;text-align:center}}.about__right-content{max-width:100%;position:relative;padding:0;width:100%}@media(min-width: 577px){.about__right-content{padding:0 50px;max-width:320px}}.about__arrow{background-image:url(https://alexkazakov.info/layout/transfer-ampemail/img/ref-arrow.png);background-repeat:no-repeat;background-size:80%;background-position:center 8%;bottom:0;height:100%;position:absolute;right:-5px;-webkit-transform:rotate(-27deg);transform:rotate(-27deg);width:50px}.about__title{font-size:1.8rem;margin-bottom:5px}.about__ref-title{font-size:1.8rem;font-weight:normal;margin-bottom:15px}.about__tip{display:block;font-size:10px}.about__desc{font-size:14px;line-height:1.5;margin-bottom:10px}.btn{-webkit-box-align:center;align-items:center;border:1px solid rgba(0,0,0,0);border-radius:5px;background-color:gray;color:#fff;cursor:pointer;display:-webkit-inline-box;display:inline-flex;font-size:16px;height:38px;-webkit-box-pack:center;justify-content:center;line-height:1.45;min-width:100px;outline:none;padding:0 5px;text-align:center;-webkit-transition:all .4s;transition:all .4s}.btn:hover{background-color:#018bbe;text-decoration:none}.btn:active{text-decoration:none}.btn:focus{-webkit-box-shadow:0 0 0 .2rem #5ad2fe;box-shadow:0 0 0 .2rem #5ad2fe;outline:none;text-decoration:none}.btn:disabled,.btn_disabled{-webkit-box-shadow:none;box-shadow:none;cursor:default;opacity:.5;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.btn:disabled:hover,.btn_disabled:hover{border-color:#424242;background-color:#424242;color:dimgray}.btn_full-width{width:100%}.btn.hidden{display:none}.btn_theme_primary{background-color:#01b0f1}.btn_theme_outline-primary{border-color:#01b0f1;background-color:rgba(0,0,0,0);color:#01b0f1}.btn_theme_outline-primary:hover{color:#fff}.btn_theme_outline-primary:disabled,.btn_theme_outline-primary.btn_disabled{border-color:gray;color:#cbcbcb}.btn_theme_outline-primary:disabled .btn__icon,.btn_theme_outline-primary.btn_disabled .btn__icon{fill:#cbcbcb}.btn_ellipsis{display:inline-block;line-height:38px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%}.container{margin-right:auto;margin-left:auto;padding-right:15px;padding-left:15px;width:100%}.footer{height:100px}.header{padding:15px 0}.header__container{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex;-webkit-box-pack:justify;justify-content:space-between}.header__left{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex;width:calc(100% - 120px)}.header__right{text-align:right;width:120px}.header__left-info{padding-left:10px}.header__title{font-size:1.7rem;line-height:1.2}@media(min-width: 577px){.header__title{font-size:2rem}}.header__subtitle{font-size:14px}.loader_transfer{max-width:200px;margin:15px auto}.main-wrapper{border-radius:4px;-webkit-box-shadow:0 0 10px 0 rgba(13,10,18,.05);box-shadow:0 0 10px 0 rgba(13,10,18,.05);background-color:#fff;max-width:calc(100% - 20px);min-height:500px;margin:30px auto 30px 10px;width:100%}@media(min-width: 577px){.main-wrapper{max-width:800px;margin:30px auto 30px auto}}.nav-tabs{display:-webkit-box;display:flex}.nav-tabs__item{background-color:#f7f7f7;border-top:1px solid #d5d5d5;border-bottom:1px solid #d5d5d5;border-left:1px solid #d5d5d5;-webkit-box-flex:1;flex:1 1 0;font-size:14px;height:46px;text-transform:uppercase;padding:4px 5px 0 5px}.nav-tabs__item:last-child{border-right:1px solid #d5d5d5}.nav-tabs__item.active{background-color:#ebebeb}.nav-tabs__item-text{display:none}@media(min-width: 577px){.nav-tabs__item-text{display:block}}.nav-tabs__item-icon-wrapper{display:block;height:22px;margin:0 auto;position:relative;top:-1px;width:22px}.nav-tabs__item-icon-wrapper img{-o-object-fit:contain;object-fit:contain}@media(min-width: 577px){.nav-tabs__item-icon-wrapper{display:none}}.nav-tabs__item-icon{display:inline-block}@media(min-width: 577px){.nav-tabs__item-icon{display:none}}.nav-tabs__item-icon-pc{display:none;max-width:100px;margin:0 auto}@media(min-width: 577px){.nav-tabs__item-icon-pc{display:block}}.social-icon{height:24px;outline:none;position:relative;width:24px}.social-icon img{-o-object-fit:contain;object-fit:contain}.transfer h5{margin-bottom:10px}.table-custom{border-bottom:1px solid #d5d5d5;overflow:hidden}.table-custom__row{border-right:1px solid #d5d5d5;min-height:50px;width:100%}.table-custom__col{background-color:#f7f7f7;border-left:1px solid #d5d5d5;border-top:1px solid #d5d5d5;-webkit-box-flex:0;flex:0 0 70%;max-width:70%;padding:8px}.table-custom__col:first-child{-webkit-box-flex:0;flex:0 0 30%;max-width:30%}@media(min-width: 802px){.table-custom__col{-webkit-box-flex:0;flex:0 0 50%;max-width:50%}.table-custom__col:first-child{-webkit-box-flex:0;flex:0 0 50%;max-width:50%}}.table-custom__col_right{font-size:14px}.table-custom__message{color:#272727;font-size:13px;height:100%;overflow:hidden;position:relative}.table-custom__message.overflow{max-height:80px}.table-custom__message-toggle-btn{padding-top:15px;text-align:left;width:100%}.overflow .table-custom__message-toggle-btn{bottom:0;left:0;position:absolute}.table-custom__message-toggle-btn-text{background-color:#ebebeb;color:#01b0f1;padding:2px 10px}.overflow .table-custom__message-toggle-btn-text{-webkit-box-shadow:0 -20px 26px 19px #ebebeb;box-shadow:0 -20px 26px 19px #ebebeb;padding:2px 10px}.table-custom__amount-value{font-size:16px}.table-custom__balance-value{font-weight:bold;font-size:1.8rem;margin-right:15px}.table-custom__arrow{font-size:3rem;font-weight:bold}.table-custom__date span{display:inline-block}.table-custom__details-title{white-space:nowrap}.table-custom__text-overflow{max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.table-custom_margin-b-sm{margin-bottom:15px}.transfer-form-nav__row{margin-left:-5px;margin-right:-5px}.transfer-form-nav__col{-webkit-box-flex:0;flex:0 0 50%;max-width:50%;padding-left:5px;padding-right:5px}.tabs-content{padding:30px 15px}.tabs-content__item{display:none}.tabs-content__item.active{display:block}
+</style>
+  </head>
+  <body>
+    <amp-bind-macro id="balanceCheck" arguments="eventValue, balanceValue" expression="eventValue.replace(',','.').replace(' ','').replace(' ','') / 1 <= balanceValue.replace(',','.').replace(' ','').replace(' ','') / 1"></amp-bind-macro>
+    <amp-bind-macro id="zeroCheck" arguments="eventValue" expression="(eventValue.replace(',', '.').replace(' ','').replace(' ','') / 1) > 0"></amp-bind-macro>
+    <amp-state id="tabsState">
+      <script type="application/json">
+        {
+          "tabActive": "oneTab"
+        }
+
+      </script>
+    </amp-state>
+    <amp-state id="transferState">
+      <script type="application/json">
+        {
+          "amountErrorVisible": false,
+          "amountValue": false,
+          "recipientErrorVisible": false,
+          "previousRecipientSelected": false,
+          "recipientEntered": false,
+          "recipientEmail": false,
+          "successfulSending": false,
+          "senderEmail": false,
+          "transferFormVisible": false,
+          "transactionHistoryVisible": false,
+          "splFormResponse": false
+        }
+
+      </script>
+    </amp-state>
+    <amp-state id="transferResponseState">
+      <script type="application/json">
+        {}
+
+      </script>
+    </amp-state>
+    <div class="main-wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__left"><a class="header__logo-link display-f align-i-c" href="https://www.google.com/" target="_blank">
+            <amp-img class="header__logo-image" src="https://alexkazakov.info/layout/transfer-ampemail/img/logo.png" width="62" height="60" alt="Gbits.io">
+            </amp-img></a>
+            <div class="header__left-info">
+              <h1 class="header__title">Gbits Gmail Wallet
+              </h1><span class="header__subtitle">testnet-beta</span>
+            </div>
+          </div>
+          <div class="header__right">
+            <button class="btn" type="button" on="tap:balanceList.refresh,recipientsList.refresh,transactionHistoryList.refresh">refresh
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="transfer">
+        <nav class="nav-tabs">
+          <button class="nav-tabs__item active clear-btn" id="oneTab" role="tab" aria-controls="onePanel" tabindex="0" on="tap:balanceList.changeToLayoutContainer(), AMP.setState({tabsState: {tabActive: 'oneTab'}})" [class]="tabsState.tabActive == 'oneTab'? 'nav-tabs__item active clear-btn' : 'nav-tabs__item clear-btn'"> <span class="nav-tabs__item-text">Account</span>
+            <amp-img class="nav-tabs__item-icon" src="https://alexkazakov.info/layout/transfer-ampemail/img/user.png" width="22" height="22" alt="Account tab">
+            </amp-img>
+          </button>
+          <button class="nav-tabs__item clear-btn" id="twoTab" role="tab" aria-controls="twoPanel" tabindex="0" on="tap:recipientsList.changeToLayoutContainer(), AMP.setState({tabsState: {tabActive: 'twoTab'}})" [class]="tabsState.tabActive == 'twoTab'? 'nav-tabs__item active clear-btn' : 'nav-tabs__item clear-btn'"> <span class="nav-tabs__item-text">SEND gbits</span>
+            <amp-img class="nav-tabs__item-icon" src="https://alexkazakov.info/layout/transfer-ampemail/img/change.png" width="22" height="22" alt="SEND gbits tab">
+            </amp-img>
+          </button>
+          <button class="nav-tabs__item clear-btn" id="fourTab" role="tab" aria-controls="fourPanel" tabindex="0" on="tap:recipientsList.changeToLayoutContainer(), AMP.setState({tabsState: {tabActive: 'fourTab'}})" [class]="tabsState.tabActive == 'fourTab'? 'nav-tabs__item active clear-btn' : 'nav-tabs__item clear-btn'">
+            <amp-img class="nav-tabs__item-icon-pc" src="https://storage.googleapis.com/staging.gbits2021.appspot.com/solanaWordMark.png" width="255" height="39" layout="responsive" alt="Solana">
+            </amp-img>
+            <div class="nav-tabs__item-icon-wrapper">
+              <amp-img class="nav-tabs__item-icon" src="https://storage.googleapis.com/staging.gbits2021.appspot.com/solanaLogoMark.png" width="101" height="88" layout="fill" alt="Solana">
+              </amp-img>
+            </div>
+          </button>
+          <button class="nav-tabs__item clear-btn" id="threeTab" role="tab" aria-controls="threePanel" tabindex="0" on="tap:transactionHistoryList.changeToLayoutContainer(), AMP.setState({tabsState: {tabActive: 'threeTab'}})" [class]="tabsState.tabActive == 'threeTab'? 'nav-tabs__item active clear-btn' : 'nav-tabs__item clear-btn'"> <span class="nav-tabs__item-text">History</span>
+            <amp-img class="nav-tabs__item-icon" src="https://alexkazakov.info/layout/transfer-ampemail/img/folder.png" width="22" height="22" alt="History tab">
+            </amp-img>
+          </button>
+        </nav>
+        <!-- begin Tabs Content-->
+        <div class="tabs-content">
+          <div class="tabs-content__item active" id="onePanel" role="tabpanel" aria-labelledby="oneTab" [class]="tabsState.tabActive == 'oneTab' ? 'tabs-content__item active' : 'tabs-content__item'">
+            <amp-list id="balanceList" height="220" items="data" src="https://gbits2021.ew.r.appspot.com/api/users/${_id}" single-item>
+              <div class="amplist-helptext" placeholder>Loading ...</div>
+              <div class="amplist-helptext" fallback>Failed to load data.       </div>
+              <template type="amp-mustache">
+                <div class="tabs-content__balance">
+                  <h5>Your Gbits balance [Solana SPL tokens]</h5>
+                  <div class="table-custom table-custom_col-align-c">
+                    <div class="table-custom__row row">
+                      <div class="table-custom__col col display-f align-i-c">Account Balance
+                      </div>
+                      <div class="table-custom__col col display-f align-i-c display-f align-i-c"> <span class="table-custom__balance-value">{{balance}}</span>
+                      </div>
+                    </div>
+                    <div class="table-custom__row row">
+                      <div class="table-custom__col col display-f align-i-c"> Account email address
+                      </div>
+                      <div class="table-custom__col col display-f align-i-c">alexandr.kazakov1@gmail.com
+                      </div>
+                    </div>
+                    <div class="table-custom__row row">
+                      <div class="table-custom__col col display-f align-i-c"> Today you can still do
+                      </div>
+                      <div class="table-custom__col col display-f align-i-c">
+                         {{quota}}
+                        transactions
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </amp-list>
+            <div class="about">
+              <div class="about__left">
+                <h2 class="about__title">Gbits Gmail Wallet [testnet-beta]
+                </h2>
+                <p class="about__desc">
+                   We bring Solana tokens and later NFTs to the 1.5 billion Gmail users.<br>No software installation needed.<br> Our own Solana SPL token "Gbits-PoC" (Proof-of-Concept) is used to demonstrate how it works.<br>
+                </p>
+              </div>
+              <div class="about__right">
+                <div class="about__right-content">
+                  <amp-img class="about__item-icon-pc" src="https://storage.googleapis.com/staging.gbits2021.appspot.com/original-2aa17472759b3a313d9ca206af0de2ba.png" width="410" height="307" layout="responsive" alt="Solana Grizzlython Hackathon">
+                  </amp-img>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-content__item" id="twoPanel" role="tabpanel" aria-labelledby="twoTab" [class]="tabsState.tabActive == 'twoTab' ? 'tabs-content__item active' : 'tabs-content__item'">
+            <amp-list id="recipientsList" height="400" items="data" src="https://gbits2021.ew.r.appspot.com/api/users/${_id}" single-item>
+              <div class="amplist-helptext" placeholder>Loading ...</div>
+              <div class="amplist-helptext" fallback>Failed to load data.       </div>
+              <template type="amp-mustache">
+                <div class="tabs-content__form-wrapper">
+                  <form id="sendingForm" method="post" action-xhr="https://gbits2021.ew.r.appspot.com/api/transfers/send" on="submit-error:AMP.setState({transferResponseState: event.response});submit-success:sendingForm.clear, AMP.setState({transferState: {successfulSending: true, recipientEntered: false, previousRecipientSelected: false}}), balanceList.refresh, transactionHistoryList.refresh, recipientsList.refresh" custom-validation-reporting="interact-and-submit">
+                    <input type="hidden" name="currency" value="GEE">
+                    <input type="hidden" name="sender" value="alexandr.kazakov1@gmail.com">
+                    <h5>Send Gbits</h5>
+                    <div class="table-custom table-custom_col-align-c table-custom_margin-b-sm">
+                      <div class="table-custom__row row">
+                        <div class="table-custom__col col display-f align-i-c">Gbits amount
+                        </div>
+                        <div class="table-custom__col col">
+                          <input name="amount" id="amount" type="tel" placeholder="10.00" on="input-throttled:AMP.setState({transferState:{successfulSending: false, amountErrorVisible: zeroCheck(event.value) ? balanceCheck(event.value, '{{balance}}') ? false : true : null, amountValue: event.value} })" required=""><span class="alert alert_error display-b" hidden="hidden" [hidden]="!transferState.amountErrorVisible">insufficient balance    </span><span class="alert alert_error display-b" hidden="hidden" [hidden]="transferState.amountErrorVisible != null || transferState.amountValue == ''">Amount must be a number > 0</span><span class="alert alert_error" visible-when-invalid="valueMissing" validation-for="amount">Enter a valid amount > 0</span>
+                        </div>
+                      </div>
+                      <div class="table-custom__row row">
+                        <div class="table-custom__col col display-f align-i-c">Recipient (from previous transaction)
+                        </div>
+                        <div class="table-custom__col col">
+                          <select name="recipient" on="change:AMP.setState({transferState:{previousRecipientSelected: event.value != '' ? true : false, recipientEmail: event.value}})" [disabled]="transferState.recipientEntered">
+                            <option value="" selected>select email address</option>{{#recipients}}
+                            <option [value]="'{{email}}'">{{email}}</option>{{/recipients}}
+                          </select>
+                        </div>
+                      </div>
+                      <div class="table-custom__row row">
+                        <div class="table-custom__col col display-f align-i-c">Recipient (new email address)
+                        </div>
+                        <div class="table-custom__col col">
+                          <input id="recipientEmail" name="recipient" type="email" placeholder="your.friend@gmail.com" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" on="input-throttled:AMP.setState({transferState:{recipientEntered: event.value != '' ? true : false, recipientEmail: event.value}})" [disabled]="transferState.previousRecipientSelected"><span class="alert alert_error" visible-when-invalid="patternMismatch" validation-for="recipientEmail">Enter a valid email address</span><span class="alert alert_error" visible-when-invalid="valueMissing" validation-for="recipientEmail">Fill in this field  </span><span class="alert alert_error" visible-when-invalid="typeMismatch" validation-for="recipientEmail">Enter a valid email address</span>
+                        </div>
+                      </div>
+                      <div class="table-custom__row row">
+                        <div class="table-custom__col col display-f align-i-c">Message
+                        </div>
+                        <div class="table-custom__col col">
+                          <textarea name="message"></textarea>
+                        </div>
+                      </div>
+                      <div class="table-custom__row row">
+                        <div class="table-custom__col col display-f align-i-c">
+                        </div>
+                        <div class="table-custom__col col">
+                          <button class="btn" type="button" [disabled]="transferState.amountErrorVisible || transferState.amountErrorVisible == null" [hidden]="transferState.previousRecipientSelected || transferState.recipientEntered" on="tap:AMP.setState({transferState:{recipientErrorVisible: true}})">Submit
+                          </button>
+                          <button class="btn" type="submit" [disabled]="transferState.amountErrorVisible || transferState.amountErrorVisible == null" hidden="hidden" [hidden]="!(transferState.previousRecipientSelected || transferState.recipientEntered)">Submit
+                          </button><span class="alert alert_error display-b" hidden="hidden" [hidden]="!transferState.recipientErrorVisible || transferState.previousRecipientSelected || transferState.recipientEntered">Select a recipient     </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div submitting>
+                      <div class="loader loader_transfer">
+                        <amp-img alt="Loader" src="https://alexkazakov.info/layout/transfer-ampemail/img/loader-gbits-gen-3.gif" layout="responsive" height="19" width="200"></amp-img>
+                      </div>
+                    </div>
+                    <div [hidden]="!transferState.successfulSending" hidden>
+                      <div class="alert alert_success">Transfer of <span [text]="transferState.amountValue"> </span>&nbsp;Gbits to <span [text]="transferState.recipientEmail"> </span>&nbsp;submitted.
+                      </div>
+                    </div>
+                    <div submit-error>
+                      <div class="alert alert_error">Error! <span [text]="transferResponseState"> </span>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </template>
+            </amp-list>
+          </div>
+          <div class="tabs-content__item" id="fourPanel" role="tabpanel" aria-labelledby="fourTab" [class]="tabsState.tabActive == 'fourTab' ? 'tabs-content__item active' : 'tabs-content__item'">
+            <amp-list id="recipientsList" height="400" items="data" src="https://gbits2021.ew.r.appspot.com/api/users/${_id}" single-item>
+              <div class="amplist-helptext" placeholder>Loading ...</div>
+              <div class="amplist-helptext" fallback>Failed to load data.       </div>
+              <template type="amp-mustache">
+                <div class="tabs-content__form-wrapper">
+                  <form id="splSendingForm" method="post" action-xhr="https://gbits2021.ew.r.appspot.com/api/transfers/amp-spl-withdrawal" on="submit-error:AMP.setState({splFormResponse: event.response});submit-success:AMP.setState({splFormResponse: event.response.url});" custom-validation-reporting="interact-and-submit">
+                    <input type="hidden" name="currency" value="GEE">
+                    <input type="hidden" name="sender" value="alexandr.kazakov1@gmail.com">
+                    <h5>Send Gbits as SPL token to your Solana wallet</h5>
+                    <div class="table-custom table-custom_col-align-c table-custom_margin-b-sm">
+                      <div class="table-custom__row row">
+                        <div class="table-custom__col col display-f align-i-c">Gbits amount
+                        </div>
+                        <div class="table-custom__col col">
+                          <input name="amount" id="amount" type="tel" placeholder="10.00" required="">
+                        </div>
+                      </div>
+                      <div class="table-custom__row row">
+                        <div class="table-custom__col col display-f align-i-c">Sender
+                        </div>
+                        <div class="table-custom__col col">
+                          <input class="disabled" type="text" value="wallet@gbits.io" disabled>
+                        </div>
+                      </div>
+                      <div class="table-custom__row row">
+                        <div class="table-custom__col col display-f align-i-c">Memo message
+                        </div>
+                        <div class="table-custom__col col">
+                          <input name="memo" type="text" placeholder="My message...">
+                        </div>
+                      </div>
+                      <div class="table-custom__row row">
+                        <div class="table-custom__col col display-f align-i-c">Solana wallet address
+                        </div>
+                        <div class="table-custom__col col">
+                          <textarea name="solanaWallet" required=""></textarea>
+                        </div>
+                      </div>
+                      <div class="table-custom__row row">
+                        <div class="table-custom__col col">
+                        </div>
+                        <div class="table-custom__col col">
+                          <button class="btn" type="submit">Submit
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div submitting>
+                      <div class="loader loader_transfer">
+                        <amp-img alt="Loader" src="https://alexkazakov.info/layout/transfer-ampemail/img/loader-gbits-gen-3.gif" layout="responsive" height="19" width="200"></amp-img>
+                      </div>
+                    </div>
+                    <div submit-success>
+                      <div class="alert alert_success alert_font-size-xs">
+                        The transfer has been sent. Solscan:
+                        <span [text]="splFormResponse"></span>
+                      </div>
+                    </div>
+                    <div submit-error>
+                      <div class="alert alert_error">Error! <span [text]="splFormResponse"> </span>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </template>
+            </amp-list>
+          </div>
+          <div class="tabs-content__item" id="threePanel" role="tabpanel" aria-labelledby="threeTab" [class]="tabsState.tabActive == 'threeTab' ? 'tabs-content__item active' : 'tabs-content__item'">
+            <amp-list id="transactionHistoryList" height="500" items="data" src="https://gbits2021.ew.r.appspot.com/api/users/${_id}" single-item>
+              <div class="amplist-helptext" placeholder>Loading ...</div>
+              <div class="amplist-helptext" fallback>Failed to load data.       </div>
+              <template type="amp-mustache">
+                <div class="tabs-content__transaction-history">
+                  <h5>Gbits Transactions</h5>
+                  <div class="table-custom table-custom_separator">
+                     {{#transactionHistory}}
+                    <div class="table-custom__row row">
+                      <div class="table-custom__col col">
+                        <div class="table-custom__date"><span>{{date}}&nbsp; </span><span>{{time}}</span>
+                        </div><span class="table-custom__arrow" [text]="'{{direction}}' == 'incoming' ? '→' : '←'" [class]="'{{direction}}' == 'incoming' ? 'table-custom__arrow success' : 'table-custom__arrow error'"></span>
+                      </div>
+                      <div class="table-custom__col table-custom__col_right col">
+                        <div class="margin-b-xs"><span class="font-weight-b" [text]="'{{direction}}' == 'incoming' ? 'Received: ' : 'Sent: '"></span><span class="table-custom__amount-value" [text]="'{{direction}}' == 'incoming' ? '{{details.amount}}' : '{{details.amount}}'" [class]="'{{direction}}' == 'incoming' ? 'table-custom__amount-value success' : 'table-custom__amount-value error'"> </span>
+                        </div>
+                        <div class="margin-b-xs"><span class="font-weight-b" [text]="'{{direction}}' == 'incoming' ? 'From: ' : 'To: '"></span><span [text]="'{{direction}}' == 'incoming' ? '{{details.sender}}' : '{{details.recipient}}'"></span></div>
+                        <div class="margin-b-xs" [hidden]="'{{details.message}}' == ''"><span class="font-weight-b">Message:&nbsp;</span><span class="table-custom__message">{{details.message}}</span>
+                        </div>
+                        <div class="margin-b-xs display-f align-i-c"><span class="table-custom__details-title font-weight-b display-b" [hidden]="'{{details.url}}' == false">Gbits explorer:&nbsp;</span><a class="table-custom__text-overflow" href="{{details.url}}" [hidden]="'{{details.url}}' == false" target="_blank">{{details.url}}</a>
+                        </div>
+                        <div class="margin-b-xs display-f"><span class="font-weight-b display-f">Hash:&nbsp;</span><span class="table-custom__text-overflow">{{hash}}</span>
+                        </div>
+                      </div>
+                    </div>{{/transactionHistory}}
+                  </div>
+                </div>
+              </template>
+            </amp-list>
+          </div>
+        </div>
+        <!-- end Tabs Content     -->
+      </div>
+    </div>
+  </body>
+</html>

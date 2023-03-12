@@ -1,0 +1,21 @@
+steps:
+  - name: node
+    entrypoint: npm
+    args: ['install']
+  - name: node
+    entrypoint: npm
+    args: ['run','lint']
+  - name: node
+    entrypoint: npm
+    env:
+      - 'DB_URL=${_DB_URL}'
+      - 'SENDGRID_API_KEY=${_SENDGRID_API_KEY}'
+      - 'CLIENT_ID=${_CLIENT_ID}'
+      - 'PRIVATE_KEY=${_PRIVATE_KEY}'
+      - 'CLIENT_EMAIL=${_CLIENT_EMAIL}'
+      - 'JWT_SECRET_USERS=${_JWT_SECRET_USERS}'
+      - 'MINT_ACCOUNT_SECRET_KEY=${_MINT_ACCOUNT_SECRET_KEY}'
+      - 'HELIUS_API_KEY=${_HELIUS_API_KEY}'
+    args: ['run', 'create-app-yaml']
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'deploy']
